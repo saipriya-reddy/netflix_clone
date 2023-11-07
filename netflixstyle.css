@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+color:white;
+}
+img{
+    max-width: 100%;
+}
+
+
+.html{
+    font-family:  Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+.top-header{
+   
+    background-image:url("netfliximg1.jpg") ;
+    height:100vh;
+    
+  
+ 
+}
+.container{
+    background-color: rgba(0,0,0,0.7);
+    height:100%;
+    
+}
+.language-picker{
+    background-color: rgba(0,0,0,0.7);
+    padding:10px 30px;
+    border:2px solid #605F5F;
+
+    font-weight: bold;
+    border-radius: 5px;
+}
+.section2signin{
+   background-color: #E50914;
+   font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 25px;
+  width: 50px;
+  text-align: center;
+  padding: 7px 15px 5px 15px; 
+ 
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px;
+   
+   width: 1000px;
+   height: 38px;
+
+}
+.navbar-left{
+   display: flex;
+     gap:35px;
+     align-items: center;
+  
+}
+.section1lang{
+   position:relative;
+}
+.language,.drop-down{
+    position: absolute;
+    top:7px;
+
+}
+.language{
+    left: 4px;
+}
+.drop-down{
+    right:-3px;
+    top:7px;
+}
+.content{
+    text-align: center;
+    margin:30vh;
+    
+}
+.container h1,p{
+    margin-top:16px;
+}
+.container h1{
+    font-size: 50px;
+    font-weight: bold;
+   
+}
+.content p{
+    font-size: 20px;
+  
+}
+.searchbar-email{
+    border:2px solid #605F5F;
+    background-color: #101212;
+     width: 353px;
+   padding-left: 10px;
+     height: 56px;
+     border-radius: 5px;
+    
+}
+.searchandgetstarted{
+    margin-top:16px;
+    height: 56px;
+ 
+}
+.getstarted{
+    background-color: #E50914;
+    width: 203px;
+    height:60px;
+    font-size: 25px;
+    padding-bottom: 5px;
+   margin-left:8px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+section{
+    background-color:black;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    padding:72px 160px;
+    align-items: center;
+    border: 5px solid  #232323;
+   
+}
+section div.texts h1{
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin: 0;
+}
+section div.texts p{
+font-size: 1.625rem;
+font-weight: 400;
+margin:1rem 0 0;
+}
+
+.media{
+    position: relative;
+}
+.media.s1 img{
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+.media.s1 video{
+width: 350px;
+position: absolute;
+left:63px;
+top: 73px;
+z-index:0.5;
+
+}
+section:nth-child(odd) div.texts{
+    order: 2;
+}
+
+section  div.media.s2 div.downloading{
+    border: 2px solid #232323;
+     border-radius: 15px;
+     height: 84px;
+     width: 254px;
+     padding:8px 12px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    position:absolute;
+     bottom:18px;
+    width:250px;
+    background-color: black;
+
+
+}
+.downloading img{
+    height: 80px;
+  width: 57px;
+  
+}
+.media.s3 img{
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+.media.s3 video{
+width: 295px;
+position: absolute;
+left:88px;
+top:36px;
+
+
+}
+.faq{
+    background-color: black;
+    padding: 70px 30px;
+    border: 5px solid #232323;
+   
+    
+}
+div.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+     margin-bottom: 40px; 
+
+}
+div.questions{
+    max-width: 800px;
+    margin:0 auto;
+    font-size: 1.625rem;
+}
+div.question{
+    position: relative;
+    background-color: #303030; 
+    margin-bottom: 10px;
+   
+}
+div.question svg{
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+div.question .header{
+ display:block; 
+    padding:  20px 30px;
+    border-bottom: 1px solid #000;
+   cursor:pointer;
+overflow: hidden;
+   
+
+
+}
+div.question div.answer{
+    padding: 0px 30px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+ div.question input[type="checkbox"]{
+    display: none;
+} 
+div.question input[type="checkbox"]:checked ~ div.answer{
+    padding:30px 30px;
+    max-height: 600px; 
+} 
+
+div.question input[type="checkbox"]:checked ~ .header svg{
+    transform: rotate(180deg);
+}
+.content1{
+    text-align: center;
+    margin-top:45px;
+    font-size: 20px;
+    
+
+}
+.footer-container{
+    background-color: #000;
+    margin:0px;
+    padding: 100px;
+    
+}
+.linkscontainer{
+   display: flex;
+gap: 20px;
+justify-content: space-between;
+padding: 40px 0px;
+
+
+}
+.link-items{
+display: flex;
+gap: 20px;
+flex-direction: column;
+}
